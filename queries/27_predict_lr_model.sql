@@ -1,0 +1,27 @@
+SELECT
+  *,
+  predicted_Label,
+  predicted_Label_probs
+FROM
+  ML.PREDICT(MODEL `dion-miguel-0001.wc_ds_001.model_sentiment_analysis_lr_expanded`, 
+            (SELECT
+               Aggregated_Comments,
+               Rating,
+               Rating_Comment,
+               Rating_Is_Bad_Count,
+               Rating_Is_Good_Count,
+               Rating_Is_Not_Offered_Count,
+               Subject,
+               Product,
+               Priority,
+               Agent_Name,
+               Agent_Region,
+               Customer_Name,
+               Requester_Region,
+               Was_Ticket_Autosolved,
+               Is_Escalated,
+               Average_First_Response_Time_Hours,
+               Average_Customer_Mrr,
+               Total_Comments
+             FROM
+               `dion-miguel-0001.wc_ds_001.conversations_predict`));
