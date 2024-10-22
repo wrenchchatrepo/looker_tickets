@@ -1,5 +1,4 @@
-# README_Zendesk_Ticket.md
-
+# README
 ## Summary:
 
 This system allows for comprehensive analysis of support tickets, including automatic categorization of issues and resolutions, evaluation of agent performance, and prediction of customer satisfaction. It combines structured ticket data with natural language processing techniques (embeddings) to gain deeper insights into customer support interactions.
