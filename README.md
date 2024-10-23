@@ -63,3 +63,6 @@ The `confidence_score` table provides an overview of agent performance, includin
 7. The `csat_boosted_tree_classifier` model uses ticket data to predict customer satisfaction.
 
 ![Zendesk Ticket Analysis](https://github.com/wrenchchatrepo/looker_tickets/blob/cd5c3f956464e293f5aac73f91f3af19f53841ce/zendesk%20tickets%20diagram.png)
+
+![Ticket Data Preprocessing](https://github.com/wrenchchatrepo/looker_tickets/blob/fbcf935b76418fe8c9c01147f33eb505d744c2cb/clean_csv_diagram.png)
+
