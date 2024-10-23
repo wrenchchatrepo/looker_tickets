@@ -1,0 +1,91 @@
+Using the Google doc "BigQuery_vector_search.pdf" I want to use this vector search method to asssign: 
+
+	Issue STRING ([NOT_ASSIGNED]] update with AvaKeyWords.Name where AvaKeyWords.Type = 'Issue' and vector given best vector seach match AvaKeyWords.Embedding, conversations_update_deduped_clean.embeddings)
+	Resolution STRING ([NOT_ASSIGNED]] update with AvaKeyWords.Name where AvaKeyWords.Type = 'Resolution' and vector given best vector seach match AvaKeyWords.Embedding, conversations_update_deduped_clean.embeddings)
+
+		[current values], {purpose}, (objective)
+
+Given Three BigQuery Tables:
+
+	looker-tickets.zendesk.AvaKeyWords
+	looker-tickets.zendesk.conversations_update_deduped_clean
+	looker-tickets.zendesk.tickets_update
+
+With the following schemas:
+
+looker-tickets.zendesk.AvaKeyWords
+
+	Type STRING	['Resolution', 'Issue']
+	Name STRING	{primary_key}
+	Definition STRING	
+	Keywords STRING	
+	Content STRING
+	Embedding FLOAT {vector_search}
+	array_length FLOAT [384]
+
+looker-tickets.zendesk.conversations_update_deduped_clean
+
+	ticket_id INTEGER {primary_key}	
+	conversation_text STRING {input_for_embeddings}
+	embeddings FLOAT {generate_for_vector_search}
+	array_length FLOAT {sum(length(conversations_update_deduped_clean.Embedding))}
+
+looker-tickets.zendesk.tickets_update
+
+	Ticket_ID INTEGER {primary_key}
+	Issue STRING ([NOT_ASSIGNED]] update with AvaKeyWords.Name where AvaKeyWords.Type = 'Issue' and vector given best vector seach match AvaKeyWords.Embedding, conversations_update_deduped.embeddings)
+	Resolution STRING ([NOT_ASSIGNED]] update with AvaKeyWords.Name where AvaKeyWords.Type = 'Resolution' and vector given best vector seach match AvaKeyWords.Embedding, conversations_update_deduped.embeddings)
+	Created_Date DATE	
+	Priority STRING	
+	Status STRING	
+	Is_Escalated BOOLEAN	
+	Is_Autosolved BOOLEAN	
+	Is_Requester_From_Doit BOOLEAN	
+	Is_Getcre BOOLEAN	
+	Is_Public BOOLEAN	
+	Is_FRT_Slo_Breach BOOLEAN	
+	Is_Cloud_Support_Case_Used BOOLEAN	
+	Cloud_Platform STRING	
+	Practice_Area STRING	
+	Skill_Group STRING	
+	Product STRING	
+	Subject STRING	
+	Agent_User_ID FLOAT	
+	Agent_Name STRING	
+	Agent_Pod STRING	
+	Agent_Region STRING	
+	Agent_Time_Zone STRING	
+	Requester_ID INTEGER	
+	Requester_Name STRING	
+	Requester_Email STRING	
+	Requester_Organization_Name STRING	
+	Requester_Region STRING	
+	Requester_Time_Zone STRING	
+	Rating STRING	
+	Rating_Comment STRING	
+	Rating_Comment_Length FLOAT	
+	Rating_Offered INTEGER	
+	Agent_Score INTEGER	
+	RND_T FLOAT	
+	Sentiment FLOAT	
+	Sentiment_Heuristic STRING	
+	Sentiment_Integer FLOAT	
+	Average_Solve_Time_Hours FLOAT	
+	Average_FRT_Hours FLOAT	
+	Average_Customer_Mrr FLOAT	
+	Count INTEGER	
+	total_comment_length INTEGER	
+	comment_count INTEGER	
+	conversation_duration_days INTEGER
+
+1. Create a table of matches using VECTOR_SEARCH (tickets_update_matches) LEFT JOIN conversations_update_deduped_clean and AvaKeyWords with the following schema
+
+	Ticket_ID INTEGER {primary_key}
+	Issue {if match then "NOT_ASSIGNED" else Name}
+	Resolution {if match then "NOT_ASSIGNED" else Name}
+
+2. Create a table tickets_update_complete LEFT JOIN tickets_update_matches add columns Issue, Resolution
+
+3. Query to count updates to tickets_update_complete for Issue and Resolution
+
+	Count(Ticket_Id), Issue, Resolution

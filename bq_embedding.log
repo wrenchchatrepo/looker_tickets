@@ -1,0 +1,567 @@
+2024-09-30 00:50:28,976 - DEBUG - Checking None for explicit credentials as part of auth process...
+2024-09-30 00:50:28,977 - DEBUG - Checking Cloud SDK credentials as part of auth process...
+2024-09-30 00:50:29,252 - INFO - Successfully set up BigQuery client for project: looker-tickets
+2024-09-30 00:50:29,252 - INFO - TOKEN environment variable is set
+2024-09-30 00:50:29,252 - INFO - Starting the embedding update process.
+2024-09-30 00:50:29,252 - DEBUG - This service is instrumented using OpenTelemetry. OpenTelemetry or one of its components could not be imported; please add compatible versions of opentelemetry-api and opentelemetry-instrumentation packages in order to get BigQuery Tracing data.
+2024-09-30 00:50:29,252 - DEBUG - Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2024-09-30 00:50:29,252 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-09-30 00:50:29,257 - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-09-30 00:50:29,342 - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2024-09-30 00:50:29,344 - DEBUG - Starting new HTTPS connection (1): bigquery.googleapis.com:443
+2024-09-30 00:50:29,745 - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/looker-tickets/jobs?prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:29,897 - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/looker-tickets/queries/e15d2db9-cd2a-4317-8101-460d2b695479?maxResults=0&location=us-central1&prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:30,009 - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/looker-tickets/queries/e15d2db9-cd2a-4317-8101-460d2b695479?fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=us-central1&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:30,340 - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/looker-tickets/jobs?prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:30,471 - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/looker-tickets/queries/2d175a8d-c949-4f23-8a3b-c61bde860fbc?maxResults=0&location=us-central1&prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:30,578 - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/looker-tickets/queries/2d175a8d-c949-4f23-8a3b-c61bde860fbc?fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=us-central1&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:30,578 - INFO - Total rows in table: 142501
+2024-09-30 00:50:30,578 - INFO - Rows with empty embeddings: 142501
+2024-09-30 00:50:30,578 - INFO - Querying for rows with empty embeddings (batch size: 10)
+2024-09-30 00:50:30,830 - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/looker-tickets/jobs?prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:31,039 - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/looker-tickets/queries/b2256451-a7da-4196-a060-1638b531fc7e?maxResults=0&location=us-central1&prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:31,154 - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/looker-tickets/queries/b2256451-a7da-4196-a060-1638b531fc7e?fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=us-central1&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:50:31,156 - INFO - Processing batch of 10 tickets
+2024-09-30 00:50:31,157 - INFO - Processing batch of 10 texts
+2024-09-30 00:50:31,157 - DEBUG - Original text length: 987 chars
+2024-09-30 00:50:31,157 - DEBUG - Truncated text length: 987 chars
+2024-09-30 00:50:31,158 - DEBUG - Original text length: 9953 chars
+2024-09-30 00:50:31,158 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:50:31,158 - DEBUG - Truncated text length: 8688 chars
+2024-09-30 00:50:31,158 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:50:31,159 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,159 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,347 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,348 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,348 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,348 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,349 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,349 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:50:31,349 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,350 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:50:31,350 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,351 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,487 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,487 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,488 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,488 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,488 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,488 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:50:31,488 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,488 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:50:31,489 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,489 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,627 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,627 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,628 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,628 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,628 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,628 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:50:31,628 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,629 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:50:31,630 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,630 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,771 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,771 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,772 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,772 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,772 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,772 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,773 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:50:31,773 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:50:31,774 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,775 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,915 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,915 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:31,915 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,915 - DEBUG - Response status code: 200
+2024-09-30 00:50:31,915 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,915 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:31,915 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:50:31,916 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:50:31,916 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:31,917 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,054 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,054 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,054 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,054 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,054 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,054 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:50:32,054 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,055 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:50:32,056 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,056 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,205 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,205 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,205 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,205 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,205 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,206 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:50:32,206 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,206 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:50:32,207 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,207 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,350 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,351 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,351 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,351 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,351 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,352 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:50:32,352 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,352 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:50:32,353 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,353 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,501 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,501 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,501 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,502 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,502 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,502 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,502 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:50:32,502 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:50:32,504 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,505 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,645 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,645 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:32,646 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,646 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,646 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,646 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:32,646 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:50:32,646 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:50:32,646 - DEBUG - Original text length: 4017 chars
+2024-09-30 00:50:32,646 - DEBUG - Original text length: 5340 chars
+2024-09-30 00:50:32,646 - DEBUG - Truncated text length: 4017 chars
+2024-09-30 00:50:32,646 - DEBUG - Truncated text length: 5340 chars
+2024-09-30 00:50:32,646 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:50:32,646 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:50:32,647 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,647 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,787 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:32,787 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,787 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:32,787 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:50:32,787 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:32,788 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,788 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,788 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:32,788 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:50:32,789 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,927 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:32,928 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:32,928 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,928 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:32,929 - DEBUG - Response status code: 200
+2024-09-30 00:50:32,929 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:50:32,929 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:32,929 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:50:32,930 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:32,930 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,068 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:33,068 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,068 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:33,068 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:50:33,069 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,070 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:33,070 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,070 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:33,070 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:50:33,071 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,209 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:33,209 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:33,210 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,210 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:33,210 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,210 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:33,210 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:50:33,210 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:50:33,212 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,212 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,351 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:33,352 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:33,353 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,354 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,354 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:33,354 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:50:33,354 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:33,355 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:50:33,356 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,356 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,494 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:33,494 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:33,495 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,495 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:33,495 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,495 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:50:33,495 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:33,496 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:50:33,497 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,497 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,634 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:33,635 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,635 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:33,635 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:33,636 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,636 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:50:33,636 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:33,636 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:50:33,638 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,638 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,778 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:33,778 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,778 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:33,778 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:50:33,779 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:33,779 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,779 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,780 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:33,780 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:50:33,780 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,916 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:33,916 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,916 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:33,916 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:50:33,917 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:33,918 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:33,918 - DEBUG - Response status code: 200
+2024-09-30 00:50:33,918 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:33,918 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:50:33,919 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,060 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:34,060 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,060 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:34,060 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:50:34,061 - DEBUG - Original text length: 1458 chars
+2024-09-30 00:50:34,061 - DEBUG - Truncated text length: 1458 chars
+2024-09-30 00:50:34,061 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:50:34,061 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:50:34,061 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,061 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,061 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:50:34,062 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:50:34,062 - DEBUG - Original text length: 8445 chars
+2024-09-30 00:50:34,062 - DEBUG - Truncated text length: 6182 chars
+2024-09-30 00:50:34,062 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:50:34,062 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,211 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,212 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,212 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,212 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,212 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,212 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,212 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:50:34,213 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:50:34,214 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,214 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,367 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,367 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,368 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,368 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:50:34,369 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,370 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,371 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,371 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,372 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:50:34,373 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,517 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,517 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,519 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,519 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,519 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,519 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,519 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:50:34,519 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:50:34,520 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,521 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,659 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,659 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,659 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,659 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:50:34,660 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,661 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,661 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,661 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,661 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:50:34,662 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:50:34,800 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,800 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:50:34,801 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,802 - DEBUG - Response status code: 200
+2024-09-30 00:50:34,802 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,802 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:50:34,802 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:50:34,802 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:51:31,167 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,167 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,305 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,306 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,306 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,306 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:51:31,339 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,339 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,339 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,339 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:51:31,352 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,353 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,492 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,492 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,493 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,493 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,493 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,494 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,494 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:51:31,494 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:51:31,495 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,496 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,635 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,635 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,635 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,636 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,636 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,636 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:51:31,636 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,636 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:51:31,637 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,637 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,776 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,777 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,777 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,778 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,778 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,778 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:51:31,778 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,778 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:51:31,779 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,779 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,917 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,918 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:31,918 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,918 - DEBUG - Response status code: 200
+2024-09-30 00:51:31,918 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,918 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:31,918 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:51:31,918 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:51:31,918 - DEBUG - Original text length: 5316 chars
+2024-09-30 00:51:31,919 - DEBUG - Truncated text length: 5316 chars
+2024-09-30 00:51:31,919 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:51:31,919 - DEBUG - Original text length: 1594 chars
+2024-09-30 00:51:31,919 - DEBUG - Truncated text length: 1594 chars
+2024-09-30 00:51:31,919 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:51:31,919 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:31,920 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,057 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,057 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,057 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,058 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:51:32,058 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,059 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,059 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,059 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,059 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:51:32,060 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,200 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,200 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,201 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,201 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,201 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,201 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,201 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:51:32,201 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:51:32,210 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,210 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,350 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,350 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,350 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,350 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:51:32,351 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,351 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,351 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,351 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:51:32,353 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,354 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,493 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,493 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,494 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,494 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,494 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,494 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,494 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:51:32,495 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:51:32,505 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,505 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,644 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,644 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,644 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,645 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:51:32,646 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:32,646 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,646 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:32,646 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:51:32,648 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,648 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,785 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:32,785 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,785 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:32,785 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:51:32,786 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:32,786 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,786 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:32,786 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:51:32,789 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,789 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,930 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:32,930 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:32,931 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,931 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:32,931 - DEBUG - Response status code: 200
+2024-09-30 00:51:32,932 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:32,932 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:51:32,932 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:51:32,935 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:32,936 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,074 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:33,075 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:33,075 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,075 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:33,075 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,075 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:51:33,075 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:33,076 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:51:33,077 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,077 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,217 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:33,217 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:33,217 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,217 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:33,217 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,217 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:33,217 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:51:33,218 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:51:33,218 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,219 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,359 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:33,360 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:33,360 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,361 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:33,361 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,361 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:33,361 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:51:33,361 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:51:33,361 - DEBUG - Original text length: 724 chars
+2024-09-30 00:51:33,361 - DEBUG - Truncated text length: 724 chars
+2024-09-30 00:51:33,362 - DEBUG - Original text length: 3156 chars
+2024-09-30 00:51:33,362 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:51:33,362 - DEBUG - Truncated text length: 3156 chars
+2024-09-30 00:51:33,362 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 1)
+2024-09-30 00:51:33,363 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,364 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,507 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:33,507 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,507 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:33,507 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:51:33,508 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,508 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:33,508 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,508 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:33,508 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 2)
+2024-09-30 00:51:33,509 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,647 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:33,647 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:33,649 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,649 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:33,650 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:51:33,651 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,651 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:33,651 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 3)
+2024-09-30 00:51:33,651 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,652 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,790 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:33,791 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,791 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:33,791 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:51:33,791 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:33,792 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,793 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,793 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:33,793 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 4)
+2024-09-30 00:51:33,794 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,931 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:33,931 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,931 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:33,931 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:51:33,931 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:33,932 - DEBUG - Response status code: 200
+2024-09-30 00:51:33,932 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:33,932 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:33,932 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app (Attempt 5)
+2024-09-30 00:51:33,932 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,070 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:34,070 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST / HTTP/11" 200 51
+2024-09-30 00:51:34,070 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,071 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:34,071 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,071 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:51:34,071 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /)'}
+2024-09-30 00:51:34,072 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 1)
+2024-09-30 00:51:34,073 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,073 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,212 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,212 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,213 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,213 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,213 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,213 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:51:34,213 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,214 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 2)
+2024-09-30 00:51:34,215 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,215 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,353 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,354 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,354 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,354 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,354 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:51:34,354 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,354 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,354 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 3)
+2024-09-30 00:51:34,373 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,373 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,514 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,514 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,515 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,515 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,515 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:51:34,516 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,516 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,516 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 4)
+2024-09-30 00:51:34,521 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,521 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,661 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,661 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,662 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,662 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,662 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,662 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,662 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:51:34,663 - DEBUG - Sending request to https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app/get-embedding (Attempt 5)
+2024-09-30 00:51:34,664 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,664 - DEBUG - Starting new HTTPS connection (1): 1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443
+2024-09-30 00:51:34,804 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,805 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,805 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,805 - DEBUG - https://1fbc-2605-a601-a0c3-6d00-a0f3-2647-b39d-708c.ngrok-free.app:443 "POST /get-embedding HTTP/11" 200 64
+2024-09-30 00:51:34,805 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:51:34,805 - DEBUG - Response status code: 200
+2024-09-30 00:51:34,806 - ERROR - 'embedding' key not found in response. Full response: {'error': 'Unexpected endpoint or method. (POST /get-embedding)'}
+2024-09-30 00:51:34,806 - ERROR - Failed to get embedding from all endpoints.
+2024-09-30 00:51:34,806 - INFO - Processed 10 embeddings
+2024-09-30 00:51:34,806 - INFO - No valid embeddings to update.
+2024-09-30 00:51:34,806 - INFO - Processed 0 tickets in this iteration. Total processed: 0
+2024-09-30 00:51:34,806 - INFO - Completed iteration 1
+2024-09-30 00:51:39,811 - INFO - Querying for rows with empty embeddings (batch size: 10)
+2024-09-30 00:51:40,111 - DEBUG - https://bigquery.googleapis.com:443 "POST /bigquery/v2/projects/looker-tickets/jobs?prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:51:40,252 - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/looker-tickets/queries/ed45af55-60a3-49ea-aad0-c2539e04650e?maxResults=0&location=us-central1&prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:51:40,372 - DEBUG - https://bigquery.googleapis.com:443 "GET /bigquery/v2/projects/looker-tickets/queries/ed45af55-60a3-49ea-aad0-c2539e04650e?fields=jobReference%2CtotalRows%2CpageToken%2Crows&location=us-central1&formatOptions.useInt64Timestamp=True&prettyPrint=false HTTP/11" 200 None
+2024-09-30 00:51:40,375 - INFO - No new tickets to process. Exiting loop.
+2024-09-30 00:51:40,375 - INFO - Completed processing. Total rows processed: 0
+2024-09-30 00:51:40,375 - INFO - Remaining rows with empty embeddings: 142501
+2024-09-30 00:51:40,375 - INFO - Embedding update process completed.
