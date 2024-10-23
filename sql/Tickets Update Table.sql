@@ -1,0 +1,53 @@
+CREATE OR REPLACE TABLE `looker-tickets.zendesk.tickets_update` AS
+SELECT 
+  nt.Ticket_ID,
+  nt.Created_Date,
+  nt.Priority,
+  nt.Status,
+  nt.Is_Escalated,
+  nt.Is_Autosolved,
+  nt.Is_Requester_From_Doit,
+  nt.Is_Getcre,
+  nt.Is_Public,
+  nt.Is_FRT_Slo_Breach,
+  nt.Is_Cloud_Support_Case_Used,
+  nt.Cloud_Platform,
+  nt.Practice_Area,
+  nt.Skill_Group,
+  nt.Product,
+  nt.Subject,
+  nt.Agent_User_ID,
+  nt.Agent_Name,
+  nt.Agent_Pod,
+  nt.Agent_Region,
+  nt.Agent_Time_Zone,
+  nt.Requester_ID,
+  nt.Requester_Name,
+  nt.Requester_Email,
+  nt.Requester_Organization_Name,
+  nt.Requester_Region,
+  nt.Requester_Time_Zone,
+  nt.Rating,
+  nt.Rating_Comment,
+  nt.Rating_Comment_Length,
+  nt.Rating_Offered,
+  nt.Issue,
+  nt.Resolution,
+  nt.Agent_Score,
+  nt.RND_T,
+  nt.Sentiment,
+  nt.Sentiment_Heuristic,
+  nt.Sentiment_Integer,
+  nt.Average_Solve_Time_Hours,
+  nt.Average_FRT_Hours,
+  nt.Average_Customer_Mrr,
+  nt.Count,
+  cs.total_comment_length,
+  cs.comment_count,
+  cs.conversation_duration_days
+FROM 
+  `looker-tickets.zendesk.new_tickets` nt
+INNER JOIN 
+  `looker-tickets.zendesk.comment_stats` cs
+ON 
+  nt.Ticket_ID = cs.Ticket_ID;

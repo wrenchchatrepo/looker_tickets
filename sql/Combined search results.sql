@@ -46,6 +46,7 @@ SimilarityResults AS (
   WHERE
     tc.Cloud_Platform = 'Google Cloud'
     AND tc.Created_Date > '2023-10-01'
+    AND tc.Is_Cloud_Support_Case_Used is TRUE
 )
 SELECT * FROM SimilarityResults
 
